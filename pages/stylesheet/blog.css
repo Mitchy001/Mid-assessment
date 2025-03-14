@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* nav styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    width: 100%;
+    position: absolute; /* Places nav inside hero */
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.logo {
+    flex: 0.5;
+    display: flex;
+    justify-content: center; /* Centers logo */
+}
+
+.logo img {
+    width: 120px;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    align-items: center;
+}
+
+ul li a {
+    color: black; /* Default black color */
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+}
+
+
+
+/* Hover effect: transparent background while keeping text visible */
+ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Light transparency */
+}
+
+/* nav  Sign Up Button */
+nav button {
+    background-color: transparent;
+    color: black;
+    padding: 18px 75px;
+    font-size: 16px;
+    border-radius: 30px;
+    border: 2px solid black;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Hover Effects on sign up button nav*/
+nav button:hover {
+    background-color: black;
+    color: white;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+    color: black;
+}
+
+
+/* styling hero section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    text-align: center;
+    color: white;
+    background-image: url(https://lof8sc.yourbrand.studio/files/dynamicContent/sites/lof8sc/images/en/webpage_17/m5p6cvmf/element_289/rwdMode_1/2400x700/blog_main.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+/* Main Heading */
+.hero h2{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin-bottom: 60px;
+}
+
+/* Button hero */
+.hero button {
+    background-color: white;
+    color: black;
+    padding: 20px 75px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Button Hover */
+.hero button:hover {
+    background-color: black;
+    color: white;
+
+}
+.hero p{
+    font-size: 60px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+
+
+
+
+.blog-sec2 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+.blog-container {
+    
+
+    transition: transform 0.1s ease-in-out;
+}
+/*.blog-container:hover {
+    transform: scale(1.02);
+}*/
+.blog-container img {
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+}
+.ideas {
+    padding-block: 20px;
+}
+.ideas h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+.ideas p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.ideas h6 {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #3b8257;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.ideas h6:hover {
+    text-decoration: underline;
+}
+.icons {
+    background-color: #4a5a62; 
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+    height: 30vh;
+}
+.icons p:first-child {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.social-icons i {
+    font-size: 24px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.footer-text {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer-text span {
+    color: #50C878; 
+    font-weight: bold;
+}
