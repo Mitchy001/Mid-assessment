@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="stylesheet/style.css">
+    
 </head>
 <body>
 
@@ -30,6 +31,15 @@
     <section class="hero">
         <div>
             <h1>Adventurers</h1>
+            <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+            <df-messenger
+              intent="WELCOME"
+              chat-title="Adventure-chatbot"
+              agent-id="ac73dd70-2abb-45cb-8ece-bfff19bddae1"
+              language-code="en"
+            ></df-messenger>
+
+            
             <p>Let yourself be impressed</p>
             <button>SIGN UP</button>
         </div>
